@@ -1,0 +1,33 @@
+.fh-section {
+    height: 100vh;
+}
+.portrait-main {
+    width: 150px;
+    border-radius: 50%;
+}
+.placeholder-md {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin: 20px;
+}
+.placeholder-sm{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+}
+#bootstrap-overrides .navbar-nav .active {
+    text-decoration: underline;
+}
+.deep {
+    background-image: url("../img/deep_bg.jpg");
+    background-size: 100%;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    max-height: 30vh;
+    overflow: auto;
+}
+.deep div {
+    margin: 10px 20px;
+}
