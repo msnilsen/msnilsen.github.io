@@ -8,55 +8,95 @@
     <link href="css/fullpage.css" type="text/css" rel="stylesheet">
     <link href="css/custom.css" type="text/css" rel="stylesheet">
     <!--<link href="css/breakpoints.css" type="text/css" rel="stylesheet">-->
+
+    <!--    Fonts    -->
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+
 </head>
 <body id="bootstrap-overrides">
+<header>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <a class="navbar-brand" href="#Home"><img src="img/matthewNilsenLogo.svg" alt="Matthew Nilsen's Logo" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Temp1">Temp1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Temp2">Temp2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 <div id="fullpage">
     <div class="section">
         <div class="fh-section d-flex flex-column">
-            <header>
-                <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#Home"><div class="placeholder-sm"></div></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Temp1">Temp1</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Temp2">Temp2</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-            <div class="d-flex flex-grow-1 align-items-center justify-content-center">
+            <div class="d-flex flex-grow-1 align-items-center justify-content-center main-bg">
                 <div class="d-inline-block text-center mr-2">
                     <img class="portrait-main" src="img/matthewNilsenPortrait.jpg" alt="Portrait of Matthew Nilsen">
                 </div>
                 <div class="d-inline-block text-center ml-2">
-                    <h1>This is Text</h1>
+                    <h1>Matthew Nilsen</h1>
                     <hr>
-                    <a class="btn btn-primary">Contact Me</a>
+                    <h2>Developer & Student</h2>
                 </div>
             </div>
-            <div class="d-flex justify-content-around align-items-center flex-wrap deep">
-                <div class="placeholder-md shadow"></div>
-                <div class="placeholder-md shadow"></div>
-                <div class="placeholder-md" id="third-box"></div>
-                <div class="placeholder-md"></div>
-                <div class="placeholder-md"></div>
-                <div class="placeholder-md"></div>
+            <div class="d-flex justify-content-around align-items-center flex-wrap deep bg-light">
+                <a href="#">
+                    <div class="placeholder-md d-flex flex-column align-items-center justify-content-center"
+                         onmouseover="schoolHover(this)" onmouseout="schoolNormal(this)">
+                        <img src="../img/books.svg" alt="Education" width="90%">
+                    </div>
+                </a>
+                <a href="#"><div class="placeholder-md d-flex flex-column align-items-center justify-content-center">
+                    <img src="../img/books.svg" alt="Education" width="90%">
+                </div></a>
+                <a href="#"><div class="placeholder-md d-flex flex-column align-items-center justify-content-center">
+                    <img src="../img/books.svg" alt="Education" width="90%">
+                </div></a>
+                <a href="#"><div class="placeholder-md d-flex flex-column align-items-center justify-content-center">
+                    <img src="../img/books.svg" alt="Education" width="90%">
+                </div></a>
+                <a href="#"><div class="placeholder-md d-flex flex-column align-items-center justify-content-center">
+                    <img src="../img/books.svg" alt="Education" width="90%">
+                </div></a>
+                <a href="#"><div class="placeholder-md d-flex flex-column align-items-center justify-content-center">
+                    <img src="../img/books.svg" alt="Education" width="90%">
+                </div></a>
             </div>
+            <div class="main-bg py-2"><p></p></div>
         </div>
     </div>
-    <div class="section">
-        <div class="fh-section bg-secondary">
-
+    <div class="section bg-light">
+        <div class="fh-section pt">
+            <div class="row container text-center">
+                <div class="col-12">
+                    <img class="d-inline-block" src="img/books.svg" height="40px">
+                    <h1 class="ml-auto d-inline-block">Education</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h2>Jefferson High School</h2>
+                </div>
+                <div class="col-10">
+                    <ul>
+                        <li><p>GPA: 4.0</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h2>Georgia Institute of Technology</h2>
+                </div>
+            </div>
         </div>
     </div>
     <div class="section">
@@ -64,10 +104,22 @@
 
         </div>
     </div>
+    <div class="section fp-auto-height">
+        <div class="d-flex align-items-center justify-content-center">
+            <div>Icons made by
+                <a href="https://www.freepik.com/" title="Freepik">Freepik</a>
+                from
+                <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                is licensed by
+                <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="js/jquery-3.3.1.min.js"></script><script src="js/bootstrap.js"></script>
 <script src="js/popper.js"></script>
-<script type="text/javascript" src="js/fullpage.js"></script>
+<script src="js/fullpage.js"></script>
+<script src="js/custom.js"></script>
 <script>
     new fullpage('#fullpage', {
         //options here

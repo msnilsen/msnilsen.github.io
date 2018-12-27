@@ -2,32 +2,75 @@
     height: 100vh;
 }
 .portrait-main {
-    width: 150px;
+    width: 300px;
+    border: 3px solid white;
     border-radius: 50%;
-}
-.placeholder-md {
-    height: 100px;
-    width: 100px;
-    background-color: green;
-    margin: 20px;
 }
 .placeholder-sm{
     height: 50px;
     width: 50px;
     background-color: green;
 }
-#bootstrap-overrides .navbar-nav .active {
-    text-decoration: underline;
-}
 .deep {
-    background-image: url("../img/deep_bg.jpg");
-    background-size: 100%;
-    -moz-box-shadow:    inset 0 0 10px #000000;
-    -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow:         inset 0 0 10px #000000;
-    max-height: 30vh;
-    overflow: auto;
+    /*background-color: #808080;*/
+    max-height: 40vh;
+    -webkit-box-shadow: inset 1px 4px 20px 4px rgba(0,0,0,0.7);
+    -moz-box-shadow: inset 1px 4px 20px 4px rgba(0,0,0,0.7);
+    box-shadow: inset 1px 4px 20px 4px rgba(0,0,0,0.7);
 }
-.deep div {
-    margin: 10px 20px;
+#bootstrap-overrides .deep div {
+    margin: 40px 20px;
+    height: 10vw;
+    width: 10vw;
+    padding: 10px;
+    /*background-color: green;*/
+    border-radius: 50%;
+    background-size: contain;
+    transition: all 400ms ease-in-out;
+    -webkit-box-shadow: 0px 25px 41px -20px rgba(0,0,0,0.74);
+    -moz-box-shadow: 0px 25px 41px -20px rgba(0,0,0,0.74);
+    box-shadow: 0px 25px 41px -20px rgba(0,0,0,0.74);
+}
+.deep div:hover {
+    transform: scale(1.1);
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+
+}
+.deep div img{
+    margin: auto;
+    display: block;
+}
+.main-bg {
+    /*background-image: url("../img/bricks.jpeg");*/
+    /*background-size: cover;*/
+    background-color: #203548;
+}
+#bootstrap-overrides .main-bg > div h1, #bootstrap-overrides .main-bg > div h2 {
+    font-family: 'Antic Slab', serif;
+    color: white;
+}
+#bootstrap-overrides .main-bg h1 {
+     font-size: 4rem;
+}
+#bootstrap-overrides .main-bg h2 {
+    font-size: 2.5rem;
+}
+hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #FFF; /* old IE */
+    background-color: #FFF; /* Modern Browsers */
+}
+#bootstrap-overrides header {
+    position: fixed;
+    z-index: 2000;
+    top: 0px;
+    width: 100%;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+#bootstrap-overrides .pt {
+    padding-top: 68px;
 }
