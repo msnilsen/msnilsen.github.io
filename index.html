@@ -11,25 +11,23 @@
 
     <!--    Fonts    -->
     <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 
 </head>
-<body id="bootstrap-overrides">
+<body class="blue-vector" id="bootstrap-overrides">
 <header>
     <nav class="navbar navbar-expand navbar-light bg-light">
-        <a class="navbar-brand" href="#Home"><img src="img/matthewNilsenLogo.svg" alt="Matthew Nilsen's Logo" height="50px"></a>
+        <a class="navbar-brand" href="#Home"><img id="head_logo" src="img/matthewNilsenLogo.svg" alt="Matthew Nilsen's Logo" height="50px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto mr-3">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#Home"><p>Home</p><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Temp1">Temp1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Temp2">Temp2</a>
+                    <a class="nav-link" href="#"><p>Contact Me</p></a>
                 </li>
             </ul>
         </div>
@@ -38,74 +36,116 @@
 <div id="fullpage">
     <div class="section">
         <div class="fh-section d-flex flex-column">
-            <div class="d-flex flex-grow-1 align-items-center justify-content-center main-bg">
+            <div class="d-flex flex-grow-1 align-items-center justify-content-center">
                 <div class="d-inline-block text-center mr-2">
                     <img class="portrait-main" src="img/matthewNilsenPortrait.jpg" alt="Portrait of Matthew Nilsen">
                 </div>
-                <div class="d-inline-block text-center ml-2">
+                <div class="d-inline-block text-center ml-2 text-white">
                     <h1>Matthew Nilsen</h1>
                     <hr>
                     <h2>Developer & Student</h2>
                 </div>
             </div>
-            <div class="d-flex justify-content-around align-items-center flex-wrap deep bg-light">
-                <a href="#">
-                    <div class="placeholder-md d-flex flex-column align-items-center justify-content-center"
-                         onmouseover="schoolHover(this)" onmouseout="schoolNormal(this)">
-                        <img src="../img/books.svg" alt="Education" width="90%">
-                    </div>
-                </a>
-                <a href="#"><div class="placeholder-md d-flex flex-column align-items-center justify-content-center">
+            <div class="d-flex justify-content-around align-items-center flex-wrap out bg-light">
+                <a href="#Education"><div class="menu-btn d-flex flex-column align-items-center justify-content-center">
                     <img src="../img/books.svg" alt="Education" width="90%">
                 </div></a>
-                <a href="#"><div class="placeholder-md d-flex flex-column align-items-center justify-content-center">
+                <a href="#"><div class="menu-btn d-flex flex-column align-items-center justify-content-center">
+                    <img src="../img/work.svg" alt="Education" width="75%">
+                </div></a>
+                <a href="#"><div class="menu-btn d-flex flex-column align-items-center justify-content-center">
+                    <img src="../img/books.svg" alt="Education" width="70%">
+                </div></a>
+                <a href="#"><div class="menu-btn d-flex flex-column align-items-center justify-content-center">
                     <img src="../img/books.svg" alt="Education" width="90%">
                 </div></a>
-                <a href="#"><div class="placeholder-md d-flex flex-column align-items-center justify-content-center">
+                <a href="#"><div class="menu-btn d-flex flex-column align-items-center justify-content-center">
                     <img src="../img/books.svg" alt="Education" width="90%">
                 </div></a>
-                <a href="#"><div class="placeholder-md d-flex flex-column align-items-center justify-content-center">
-                    <img src="../img/books.svg" alt="Education" width="90%">
-                </div></a>
-                <a href="#"><div class="placeholder-md d-flex flex-column align-items-center justify-content-center">
+                <a href="#"><div class="menu-btn d-flex flex-column align-items-center justify-content-center">
                     <img src="../img/books.svg" alt="Education" width="90%">
                 </div></a>
             </div>
-            <div class="main-bg py-2"><p></p></div>
+            <div class="py-2" id="main-bg-2"><p></p></div>
         </div>
     </div>
-    <div class="section bg-light">
-        <div class="fh-section pt">
-            <div class="row container text-center">
-                <div class="col-12">
-                    <img class="d-inline-block" src="img/books.svg" height="40px">
-                    <h1 class="ml-auto d-inline-block">Education</h1>
+    <div class="section">
+        <div class="fh-section d-flex flex-column justify-content-between">
+            <div class="pt mt-4">
+                <div class="img-container d-flex flex-column justify-content-center">
+                    <div class="edu-banner" id="gt"></div>
+                    <h1 class="font-3rem text-white">Georgia Institute of Technology</h1>
+                </div>
+                <div class="edu-banner-lower">
+                    <div class="pt-3">
+                        <div class="row out ml-3 bg-light">
+                            <div class="col">
+                                <h2>Stats:</h2>
+                                <p>GPA: 4.0</p>
+                                <p>Major: Computer Science</p>
+                                <p>Expected Graduation: May 2022</p>
+                                <p>Threads: Intelligence & Information Internetworks</p>
+                                <p>Credits Completed: 38</p>
+                            </div>
+                            <div class="col">
+                                <h2>Honors & Awards</h2>
+                                <div class="d-inline-block"><a href="#" data-toggle="tooltip" data-placement="top" title="4.0 GPA with more than 12 credit hours and no withdrawals"><p>Faculty Honors</p></a></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <h2>Jefferson High School</h2>
+            <div class="pb-4">
+                <div class="ml-auto img-container d-flex flex-column justify-content-center">
+                    <div class="edu-banner" id="jhs"></div>
+                    <h1 class="font-3rem text-white" style="left: 25%">Jefferson High School</h1>
                 </div>
-                <div class="col-10">
-                    <ul>
-                        <li><p>GPA: 4.0</p></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <h2>Georgia Institute of Technology</h2>
+                <div class="edu-banner-lower" style="position:relative; left: 43%; color: black">
+                    <div class="row out mt-3 bg-light">
+                        <div class="col">
+                            <h2>Stats:</h2>
+                            <p>GPA: 4.0</p>
+                            <p>Class Rank: 3rd</p>
+                        </div>
+                        <div class="col">
+                            <h2>Honors & Awards</h2>
+                            <p><a href="#" data-toggle="tooltip" data-placement="top" title="Granted to students who receive an average score of at least 3.5 on all AP Exams taken, and scores of 3 or higher on five or more of these exams.">AP Scholar w/ Distinction</a></p>
+                            <p><a href="#" data-toggle="tooltip" data-placement="top" title="Indicates ranking in top 5% of class">Georgia Certificate of Merit</a></p>
+                            <p><a href="#" data-toggle="tooltip" data-placement="top" title="Awarded to athlete with highest GPA">Scholar Athlete</a></p>
+                            <p>Eagle Scout</p>
+                            <p>Commencement Speaker</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="section">
-        <div class="fh-section">
-
+        <div class="fp-section">
+            <div class="pt mt-4 container h-100">
+                <h1 class="text-white">Experience</h1>
+                <hr class="w-50 ml-0">
+                <h2 class="text-white mt-5">Omnimetrix, LLC - Intern</h2>
+                <div class="d-flex align-items-center">
+                    <div class="out bg-light" style="margin: 0px -5px;">
+                        <h3>Quality Management & Production</h3>
+                        <p>At OmniMetrix, industry leader in generator & pipeline monitoring solutions, I contributed towards the development of a quality management system that followed ISO 9001 standards. I also gained experience in the manufacturing department assembling units, loading code to generator monitors, and testing products.</p>
+                    </div>
+                    <h6 class="d-inline-block rotate-left" style="white-space:nowrap;">1/7/18 – 7/30/18</h6>
+                </div>
+                <h2 class="text-white mt-5">Omnimetrix, LLC - Intern</h2>
+                <div class="d-flex align-items-center">
+                    <div class="out bg-light" style="margin: 0px -5px;">
+                        <h3>Quality Management & Production</h3>
+                        <p>At OmniMetrix, industry leader in generator & pipeline monitoring solutions, I contributed towards the development of a quality management system that followed ISO 9001 standards. I also gained experience in the manufacturing department assembling units, loading code to generator monitors, and testing products.</p>
+                    </div>
+                    <h6 class="d-inline-block rotate-left" style="white-space:nowrap;">1/7/18 – 7/30/18</h6>
+                </div>
+            </div>
         </div>
     </div>
     <div class="section fp-auto-height">
-        <div class="d-flex align-items-center justify-content-center">
+        <div class="d-flex flex-column align-items-center justify-content-center">
             <div>Icons made by
                 <a href="https://www.freepik.com/" title="Freepik">Freepik</a>
                 from
@@ -113,11 +153,13 @@
                 is licensed by
                 <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
             </div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
         </div>
     </div>
 </div>
-<script src="js/jquery-3.3.1.min.js"></script><script src="js/bootstrap.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/fullpage.js"></script>
 <script src="js/custom.js"></script>
 <script>
@@ -125,9 +167,14 @@
         //options here
         autoScrolling:true,
         scrollHorizontally: true,
-        anchors:['Home', 'Temp1', 'Temp2']
+        anchors:['Home', 'Education', 'Temp2']
     });
     fullpage_api.setAllowScrolling(true);
+</script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 </script>
 </body>
 </html>

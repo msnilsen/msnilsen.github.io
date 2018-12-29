@@ -1,3 +1,10 @@
+body {
+    font-family: 'Antic Slab', serif;
+}
+body p {
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 5px;
+}
 .fh-section {
     height: 100vh;
 }
@@ -11,50 +18,42 @@
     width: 50px;
     background-color: green;
 }
-.deep {
+.out {
     /*background-color: #808080;*/
+    padding: 5px;
     max-height: 40vh;
-    -webkit-box-shadow: inset 1px 4px 20px 4px rgba(0,0,0,0.7);
-    -moz-box-shadow: inset 1px 4px 20px 4px rgba(0,0,0,0.7);
-    box-shadow: inset 1px 4px 20px 4px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0px 0px 39px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 39px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 39px 4px rgba(0,0,0,0.75);
 }
-#bootstrap-overrides .deep div {
+#bootstrap-overrides .out .menu-btn {
     margin: 40px 20px;
     height: 10vw;
     width: 10vw;
     padding: 10px;
-    /*background-color: green;*/
+    background-color: #4255ff;
     border-radius: 50%;
     background-size: contain;
-    transition: all 400ms ease-in-out;
+    transition: all 200ms ease-in-out;
     -webkit-box-shadow: 0px 25px 41px -20px rgba(0,0,0,0.74);
     -moz-box-shadow: 0px 25px 41px -20px rgba(0,0,0,0.74);
     box-shadow: 0px 25px 41px -20px rgba(0,0,0,0.74);
 }
-.deep div:hover {
+.out .menu-btn:hover {
     transform: scale(1.1);
     opacity: 0.6;
     filter: alpha(opacity=60);
 
 }
-.deep div img{
+.out .menu-btn img{
     margin: auto;
     display: block;
 }
-.main-bg {
-    /*background-image: url("../img/bricks.jpeg");*/
-    /*background-size: cover;*/
-    background-color: #203548;
+#bootstrap-overrides #main-bg h1 {
+     font-size: 5rem;
 }
-#bootstrap-overrides .main-bg > div h1, #bootstrap-overrides .main-bg > div h2 {
-    font-family: 'Antic Slab', serif;
-    color: white;
-}
-#bootstrap-overrides .main-bg h1 {
-     font-size: 4rem;
-}
-#bootstrap-overrides .main-bg h2 {
-    font-size: 2.5rem;
+#bootstrap-overrides #main-bg h2 {
+    font-size: 3rem;
 }
 hr {
     border: none;
@@ -68,9 +67,56 @@ hr {
     z-index: 2000;
     top: 0px;
     width: 100%;
-    opacity: 0.7;
-    filter: alpha(opacity=70);
+    /*opacity: 0.7;*/
+    /*filter: alpha(opacity=70);*/
 }
 #bootstrap-overrides .pt {
-    padding-top: 68px;
+    padding-top: 76px;
+
+}
+.font-3rem {
+    font-size: 3rem;
+}
+.img-container {
+    position: relative;
+    width: 75%;
+    text-align: center;
+}
+.img-container h1 {
+    position: absolute;
+    width: 75%;
+    z-index: 2000;
+}
+.edu-banner {
+    height: 100px;
+    background-size: cover;
+    /*opacity: 0.5;*/
+    /*filter: alpha(opacity=50);*/
+
+}
+.edu-banner#gt {
+    background-image: url("../img/tech-background-tp.png");
+    background-position: 50% 35%;
+}
+.edu-banner#jhs {
+    background-image: url("../img/jhs-tp.png");
+    background-position: 50% 45%;
+ }
+.blue-vector {
+    background-color: #ffffff;
+    background-image: url("../img/blue-vector-bg.svg");
+    background-size: cover;
+    /* background by SVGBackgrounds.com */
+}
+.edu-banner-lower {
+    width: 55%;
+}
+.rotate-left {
+    position: relative;
+    font-weight: bold;
+    transform: rotate(90deg);
+    transform-origin: center center;
+    padding-bottom: 3px;
+    margin: 0px;
+    left: -40px;
 }
