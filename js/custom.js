@@ -7,6 +7,6 @@ function schoolNormal(x) {
     x.innerHTML = tempInnerHTML;
     tempInnerHTML = "";
 }
-function loadedBody() {
-    location.href = "#Home";
-}
+// function loadedBody() {
+//     location.href = "#Home";
+// }
