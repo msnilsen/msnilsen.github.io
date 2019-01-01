@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc422bbf-9656-48be-9927-100644400317" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/blue-vector-bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/jhs-tp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tech-background-tp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/unneeded/black-vector-bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/unneeded/jhs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/unneeded/jhs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/unneeded/jhs.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/unneeded/omni-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/unneeded/tech-background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/unneeded/tech-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/unneeded/tech-background.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/work.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/abstract.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/abstract.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/abstract_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/abstract_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/abstract_2.psd" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/abstract_2.psd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/img/books.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/books.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bricks.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/bricks.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bricks.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/bricks.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/deep_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/deep_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/matthewNilsenPortrait.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/matthewNilsenPortrait.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/wood.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/wood.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,6 +73,7 @@
     <session id="742383782">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -191,10 +212,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1415" />
-    <option name="y" value="486" />
-    <option name="width" value="985" />
-    <option name="height" value="1035" />
+    <option name="x" value="1962" />
+    <option name="y" value="-27" />
+    <option name="width" value="1773" />
+    <option name="height" value="1863" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -242,7 +263,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546126318257" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546126380441" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -276,16 +297,15 @@
       <workItem from="1544919634942" duration="9205000" />
       <workItem from="1545851342113" duration="9645000" />
       <workItem from="1545933838465" duration="30754000" />
-      <workItem from="1546103225960" duration="9253000" />
+      <workItem from="1546103225960" duration="9558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82806000" />
+    <option name="totallyTimeSpent" value="83111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1927" y="514" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07852349" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

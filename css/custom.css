@@ -22,6 +22,7 @@ body p {
     /*background-color: #808080;*/
     padding: 5px;
     max-height: 40vh;
+    min-height: 20vh;
     -webkit-box-shadow: 0px 0px 39px 4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 39px 4px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 39px 4px rgba(0,0,0,0.75);
