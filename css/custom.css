@@ -89,7 +89,7 @@ hr {
     z-index: 2000;
 }
 .edu-banner {
-    height: 100px;
+    height: 10vh;
     background-size: cover;
     /*opacity: 0.5;*/
     /*filter: alpha(opacity=50);*/
@@ -111,6 +111,9 @@ hr {
 }
 .edu-banner-lower {
     width: 55%;
+}
+.edu-banner-lower p {
+    margin-bottom: 0px;
 }
 .rotate-left {
     position: relative;

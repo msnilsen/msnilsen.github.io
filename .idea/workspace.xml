@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc422bbf-9656-48be-9927-100644400317" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/blue-vector-bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/jhs-tp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tech-background-tp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/unneeded/black-vector-bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/unneeded/jhs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/unneeded/jhs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/unneeded/jhs.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/unneeded/omni-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/unneeded/tech-background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/unneeded/tech-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/unneeded/tech-background.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/work.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/abstract.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/abstract.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/abstract_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/abstract_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/abstract_2.psd" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/abstract_2.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/books.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/books.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bricks.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/bricks.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bricks.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/bricks.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/deep_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/deep_bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/matthewNilsenPortrait.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/matthewNilsenPortrait.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/wood.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/unneeded/wood.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/matthewNilsenPortrait.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/matthewNilsenPortrait.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,8 +54,9 @@
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -97,14 +75,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="3022" />
+          <entry key="css" value="3042" />
           <entry key="html" value="5027" />
           <entry key="js" value="202" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="3022" />
+          <entry key="CSS" value="3042" />
           <entry key="HTML" value="5027" />
           <entry key="JavaScript" value="202" />
         </counts>
@@ -116,13 +94,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="1955">
               <caret line="131" column="71" selection-start-line="131" selection-start-column="71" selection-end-line="131" selection-end-column="71" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h6#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h6#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -133,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="106845">
               <caret line="6285" column="22" selection-start-line="6285" selection-start-column="22" selection-end-line="6285" selection-end-column="22" />
             </state>
           </provider>
@@ -151,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+            <state relative-caret-position="408">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -160,7 +137,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/breakpoints.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
+            <state>
               <caret column="47" selection-start-column="47" selection-end-column="47" />
             </state>
           </provider>
@@ -200,8 +177,8 @@
         <option value="$PROJECT_DIR$/css/wanted-bootstrap.css" />
         <option value="$PROJECT_DIR$/css/breakpoints.css" />
         <option value="$PROJECT_DIR$/js/custom.js" />
-        <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/custom.css" />
       </list>
     </option>
   </component>
@@ -223,6 +200,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,7 +234,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,16 +275,18 @@
       <workItem from="1545851342113" duration="9645000" />
       <workItem from="1545933838465" duration="30754000" />
       <workItem from="1546103225960" duration="9558000" />
+      <workItem from="1546375131959" duration="817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83111000" />
+    <option name="totallyTimeSpent" value="83928000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1927" y="514" width="1550" height="838" extended-state="6" />
+    <frame x="-6" y="-6" width="1719" height="932" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07852349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0709561" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -375,7 +354,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="106845">
           <caret line="6285" column="22" selection-start-line="6285" selection-start-column="22" selection-end-line="6285" selection-end-column="22" />
         </state>
       </provider>
@@ -389,27 +368,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/breakpoints.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
+        <state>
           <caret column="47" selection-start-column="47" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+        <state relative-caret-position="408">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="1955">
           <caret line="131" column="71" selection-start-line="131" selection-start-column="71" selection-end-line="131" selection-end-column="71" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h6#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h6#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
