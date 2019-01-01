@@ -126,7 +126,7 @@ hr {
     /* background by SVGBackgrounds.com */
 }
 .edu-banner-lower {
-    width: 55%;
+    width: 50vw;
 }
 .edu-banner-lower p {
     margin-bottom: 0px;
@@ -139,4 +139,7 @@ hr {
     padding-bottom: 3px;
     margin: 0px;
     left: -40px;
+}
+#head-logo {
+    height: 5vh;
 }
