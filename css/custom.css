@@ -1,3 +1,9 @@
+@media (min-width: 992px) {
+    #link-box {
+        max-height: 40vh;
+        min-height: 20vh;
+    }
+}
 @media (max-width: 991.98px){
     #link-box {
         max-height: 20vh;
@@ -5,12 +11,6 @@
     }
     #main-bg-2 {
         height: 10px;
-    }
-}
-@media (min-width: 992px) {
-    #link-box {
-        max-height: 40vh;
-        min-height: 20vh;
     }
 }
 .out {
@@ -23,28 +23,32 @@
 body {
     font-family: 'Antic Slab', serif;
 }
-body p {
+#bootstrap-overrides p {
     font-family: 'Work Sans', sans-serif;
-    margin-bottom: 5px;
-    font-size: calc(0.75em + 1vmin);
+    margin-bottom: 2px;
+    font-size: 2vmin;
+}
+#bootstrap-overrides h1 {
+    font-size: 6vmin;
+}
+#bootstrap-overrides h2 {
+    font-size: 5vmin;
+}
+#bootstrap-overrides h2 {
+    font-size: 4vmin;
 }
 .fh-section {
-    height: 100vh;
+    height: 100%;
 }
 .portrait-main {
     width: 300px;
     border: 3px solid white;
     border-radius: 50%;
 }
-.placeholder-sm{
-    height: 50px;
-    width: 50px;
-    background-color: green;
-}
 #bootstrap-overrides .out .menu-btn {
-    margin: 40px 20px;
-    height: 10vw;
-    width: 10vw;
+    margin: 40px 0px;
+    height: calc(100vw / 10);
+    width: calc(100vw / 10);
     padding: 10px;
     background-color: #4255ff;
     border-radius: 50%;
@@ -63,12 +67,6 @@ body p {
 .out .menu-btn img{
     margin: auto;
     display: block;
-}
-#bootstrap-overrides #main-bg h1 {
-     font-size: 5rem;
-}
-#bootstrap-overrides #main-bg h2 {
-    font-size: 3rem;
 }
 hr {
     border: none;
