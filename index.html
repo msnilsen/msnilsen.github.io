@@ -34,8 +34,8 @@
 </header>
 <div id="fullpage">
     <div class="section">
-        <div class="fh-section d-flex flex-column justify-content-around">
-            <div class="d-flex align-items-center justify-content-center">
+        <div class="fh-section flex-grow-1 d-flex flex-column justify-content-between">
+            <div class="flex-grow-1 d-flex align-items-center justify-content-center">
                 <div class="d-inline-block text-center mx-3">
                     <img class="portrait-main" src="img/matthewNilsenPortrait.jpg" alt="Portrait of Matthew Nilsen">
                 </div>
@@ -69,37 +69,31 @@
     </div>
     <div class="section">
         <div class="fh-section d-flex flex-column justify-content-around">
-            <div>
-                <div class="img-container d-flex flex-column justify-content-around">
-                    <div class="edu-banner" id="gt"></div>
-                    <h1 class="font-3rem text-white">Georgia Institute of Technology</h1>
-                </div>
+            <div class="my-3">
+                <h1 class="text-white d-inline-block edu-banner" id="gt">Georgia Institute of Technology</h1>
                 <div class="edu-banner-lower ml-4">
-                    <div class="pt-3">
-                        <div class="row out bg-light">
-                            <div class="col">
-                                <h2>Stats:</h2>
-                                <p>GPA: 4.0</p>
-                                <p>Major: Computer Science</p>
-                                <p>Expected Graduation: May 2022</p>
-                                <p>Threads: Intelligence & Information Internetworks</p>
-                                <p>Credits Completed: 38</p>
-                            </div>
-                            <div class="col">
-                                <h2>Honors & Awards</h2>
-                                <div class="d-inline-block"><a href="#" data-toggle="tooltip" data-placement="top" title="4.0 GPA with more than 12 credit hours and no withdrawals"><p>Faculty Honors</p></a></div>
-                            </div>
+                    <div class="row out bg-light">
+                        <div class="col">
+                            <h2>Stats:</h2>
+                            <p>GPA: 4.0</p>
+                            <p>Major: Computer Science</p>
+                            <p>Expected Graduation: May 2022</p>
+                            <p>Threads: Intelligence & Information Internetworks</p>
+                            <p>Credits Completed: 38</p>
+                        </div>
+                        <div class="col">
+                            <h2>Honors & Awards</h2>
+                            <div class="d-inline-block"><a href="#" data-toggle="tooltip" data-placement="top" title="4.0 GPA with more than 12 credit hours and no withdrawals"><p>Faculty Honors</p></a></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="ml-auto img-container d-flex flex-column justify-content-center">
-                    <div class="edu-banner" id="jhs"></div>
-                    <h1 class="font-3rem text-white" style="left: 25%">Jefferson High School</h1>
+                <div class="d-flex justify-content-end">
+                    <h1 class="text-white d-inline-block edu-banner" id="jhs">Jefferson High School</h1>
                 </div>
                 <div class="edu-banner-lower ml-auto mr-4">
-                    <div class="row out mt-3 bg-light">
+                    <div class="row out bg-light">
                         <div class="col">
                             <h2>Stats:</h2>
                             <p>GPA: 4.0</p>
@@ -166,7 +160,7 @@
         autoScrolling:true,
         scrollHorizontally: true,
         anchors:['Home', 'Education', 'Temp2'],
-        paddingTop: '10vh'
+        paddingTop: '8vh'
     });
     fullpage_api.setAllowScrolling(true);
 </script>
