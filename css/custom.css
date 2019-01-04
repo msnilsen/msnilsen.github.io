@@ -6,7 +6,7 @@
 }
 @media (max-width: 991.98px){
     #link-box {
-        max-height: 20vh;
+        max-height: 15vh;
         min-height: 10vh;
     }
 }
@@ -23,20 +23,20 @@
 }
 @media (max-width: 575.98px) {
     p {
-        font-size: .5rem;
+        font-size: .6rem;
     }
     #bootstrap-overrides h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     #bootstrap-overrides h2 {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 #title h1 {
-     font-size: 5vmax;
+     font-size: 4vmax;
 }
 #title h2 {
-    font-size: 4vmax;
+    font-size: 3vmax;
 }
 .out {
     /*background-color: #808080;*/
@@ -118,6 +118,7 @@ hr {
 .edu-banner {
     background-size: cover;
     min-width: 70vw;
+    padding: 10px;
     /*opacity: 0.5;*/
     /*filter: alpha(opacity=50);*/
 
@@ -125,13 +126,11 @@ hr {
 .edu-banner#gt {
     background-image: url("../img/tech-background-tp.png");
     background-position: 50% 35%;
-    padding: 5px;
     padding-right: 20%;
 }
 .edu-banner#jhs {
     background-image: url("../img/jhs-tp.png");
     background-position: 50% 45%;
-    padding: 5px;
     padding-left: 25%;
  }
 .blue-vector {
