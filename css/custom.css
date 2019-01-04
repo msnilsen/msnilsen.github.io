@@ -24,6 +24,7 @@
 @media (max-width: 575.98px) {
     p {
         font-size: .6rem;
+        color: red;
     }
     #bootstrap-overrides h1 {
         font-size: 1.6rem;
