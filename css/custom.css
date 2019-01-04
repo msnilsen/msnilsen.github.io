@@ -57,9 +57,7 @@ body {
     border-radius: 50%;
 }
 #bootstrap-overrides .out .menu-btn {
-    margin: 40px 0px;
-    max-height: 15vh;
-    max-width: 15vh;
+    margin: 10% 0px;
     height: calc(100vw / 10);
     width: calc(100vw / 10);
     padding: 20%;

@@ -160,7 +160,13 @@
         autoScrolling:true,
         scrollHorizontally: true,
         anchors:['Home', 'Education', 'Temp2'],
-        paddingTop: '8vh'
+        paddingTop: '8vh',
+        responsiveWidth: 1100,
+        afterResponsive: function(isResponsive) {
+            if(isResponsive) {
+                document.body.style.backgroundAttachment = "fixed";
+            }
+        }
     });
     fullpage_api.setAllowScrolling(true);
 </script>
