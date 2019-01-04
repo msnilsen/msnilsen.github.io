@@ -3,9 +3,6 @@
         max-height: 40vh;
         min-height: 20vh;
     }
-    h1 {
-        font-size: 2.2rem;
-    }
 }
 @media (max-width: 991.98px){
     #link-box {
@@ -29,10 +26,13 @@
         font-size: .6rem;
     }
     #bootstrap-overrides h1 {
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
     #bootstrap-overrides h2 {
-        font-size: .8rem;
+        font-size: 1.1rem;
+    }
+    #link-box {
+        margin-bottom: 3vh;
     }
 }
 #title h1 {
