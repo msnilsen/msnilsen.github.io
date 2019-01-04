@@ -7,6 +7,9 @@ function schoolNormal(x) {
     x.innerHTML = tempInnerHTML;
     tempInnerHTML = "";
 }
-// function loadedBody() {
-//     location.href = "#Home";
-// }
+$(document).on('show.bs.modal', function() {
+    fullpage_api.setAllowScrolling(false);
+});
+$(document).on('hide.bs.modal', function() {
+    fullpage_api.setAllowScrolling(true);
+});
