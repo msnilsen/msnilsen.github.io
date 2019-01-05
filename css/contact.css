@@ -1,0 +1,98 @@
+@media (min-width: 992px) {
+}
+@media (max-width: 991.98px){
+
+}
+@media (max-width: 767.98px) {
+    p {
+        font-size: .75rem;
+    }
+    #bootstrap-overrides h1 {
+        font-size: 2rem;
+    }
+    #bootstrap-overrides h2 {
+        font-size: 1.5rem;
+    }
+    #bootstrap-overrides h3 {
+        font-size: 1.2rem;
+    }
+    #bootstrap-overrides h4 {
+        font-size: 1rem;
+    }
+    hr {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+}
+@media (max-width: 575.98px) {
+    p {
+        font-size: .6rem;
+    }
+    #bootstrap-overrides h1 {
+        font-size: 1.6rem;
+    }
+    #bootstrap-overrides h2 {
+        font-size: 1.1rem;
+    }
+    #bootstrap-overrides h3 {
+        font-size: .95rem;
+    }
+    #bootstrap-overrides h4 {
+        font-size: .8rem;
+    }
+    #link-box {
+        margin-bottom: 8vh;
+    }
+    hr {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+}
+body {
+    font-family: 'Antic Slab', serif;
+}
+p {
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 0px;
+}
+.portrait-main {
+    height: 40vmin;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #FFF; /* old IE */
+    background-color: #FFF; /* Modern Browsers */
+}
+#head-logo {
+    height: 6vh;
+}
+#bootstrap-overrides nav {
+    position: fixed;
+    z-index: 2000;
+    top: 0px;
+    width: 100%;
+    height: 8vh;
+    -webkit-box-shadow: 0px 1px 30px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 30px 6px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 30px 6px rgba(0,0,0,0.75);
+    /*opacity: 0.7;*/
+    /*filter: alpha(opacity=70);*/
+}
+.blue-vector {
+    background-color: #ffffff;
+    background-image: url("../img/blue-vector-bg.svg");
+    background-size: cover;
+    /* background by SVGBackgrounds.com */
+}
+#contact-info > * {
+    margin: 5px 0px;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}

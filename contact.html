@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/matthewNilsenLogo.png">
+    <title>Matthew Nilsen</title>
+
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/fullpage.css" type="text/css" rel="stylesheet">
+    <link href="css/contact.css" type="text/css" rel="stylesheet">
+
+    <!--    Fonts    -->
+    <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+</head>
+<body class="blue-vector" id="bootstrap-overrides" style="background-attachment: fixed">
+<header>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img id="head-logo" src="img/matthewNilsenLogo.svg" alt="Matthew Nilsen's Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav align-items-center ml-auto mr-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#Home"><p>Home</p></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><p>Contact Me</p><span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="container d-flex text-white" style="margin-top: 10vh">
+    <div class="row w-100 mt-5">
+        <div class="col-md-6" id="contact-info">
+            <img class="portrait-main" src="img/matthewNilsenPortrait.jpg" alt="Portrait of Matthew Nilsen">
+            <p id="email">Please enable JavaScript</p>
+            <p id="phone">Please enable JavaScript</p>
+            <a class="text-white d-flex justify-content-left align-items-center" href="https://github.com/msnilsen" target="_blank">
+                <img class="icon" src="img/GitHub-Mark-32px.png">
+                <p>msnilsen</p>
+            </a>
+            <a class="text-white d-flex justify-content-left align-items-center" href="https://www.linkedin.com/in/matthew-nilsen-b41195171/" target="_blank">
+                <img class="icon" src="img/linkedin-logo.svg">
+                <p>Matthew Nilsen</p>
+            </a>
+        </div>
+        <div class="col-md-6 text-center d-flex flex-column justify-content-around" style="padding-top: 20px">
+            <form method="get" action="resumeB.pdf">
+                <button class="btn btn-outline-light" type="submit"><p>Download Resume</p></button>
+            </form>
+            <div>
+                <a class="btn btn-outline-light" href="resumeB.pdf" target="_blank"><p>Open Resume in New Tab</p></a>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    document.getElementById('email').innerHTML = 'Email: ' + 'mnilsen50' + '@' + 'gmail.com';
+    document.getElementById('phone').innerHTML = 'Phone: ' + '706' + '-' + '362' + '-' + '7112';
+</script>
+</body>
+</html>

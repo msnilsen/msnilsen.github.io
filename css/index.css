@@ -13,8 +13,15 @@
     #bootstrap-overrides h2 {
         font-size: 1.5rem;
     }
+    #bootstrap-overrides h3 {
+        font-size: 1.2rem;
+    }
     #bootstrap-overrides h4 {
         font-size: 1rem;
+    }
+    hr {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
     }
 }
 @media (max-width: 575.98px) {
@@ -27,12 +34,22 @@
     #bootstrap-overrides h2 {
         font-size: 1.1rem;
     }
+    #bootstrap-overrides h3 {
+        font-size: .95rem;
+    }
     #bootstrap-overrides h4 {
         font-size: .8rem;
     }
     #link-box {
         margin-bottom: 8vh;
     }
+    hr {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+}
+ul {
+    padding-left: 2.5vmin;
 }
 #title h1 {
      font-size: 4vmax;
@@ -49,6 +66,10 @@
 }
 body {
     font-family: 'Antic Slab', serif;
+}
+p {
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 2px;
 }
 .fh-section {
     height: 92vh;
@@ -75,7 +96,6 @@ body {
     transform: scale(1.1);
     opacity: 0.6;
     filter: alpha(opacity=60);
-
 }
 .out .menu-btn img{
     margin: auto;
@@ -103,10 +123,6 @@ hr {
     box-shadow: 0px 1px 30px 6px rgba(0,0,0,0.75);
     /*opacity: 0.7;*/
     /*filter: alpha(opacity=70);*/
-}
-#bootstrap-overrides .pt {
-    padding-top: 76px;
-
 }
 .img-container {
     position: relative;
@@ -145,9 +161,6 @@ hr {
 .edu-banner-lower {
     max-width: 53vw;
 }
-p {
-    margin-bottom: 2px;
-}
 .rotate-left {
     position: relative;
     font-weight: bold;
@@ -161,7 +174,6 @@ p {
     height: 6vh;
 }
 .card {
-
     margin: 30px 2vw;
     padding: 10px;
 }
