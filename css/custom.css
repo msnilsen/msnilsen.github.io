@@ -1,14 +1,7 @@
 @media (min-width: 992px) {
-    #link-box {
-        max-height: 40vh;
-        min-height: 20vh;
-    }
 }
 @media (max-width: 991.98px){
-    #link-box {
-        max-height: 15vh;
-        min-height: 10vh;
-    }
+
 }
 @media (max-width: 767.98px) {
     p {
@@ -20,6 +13,9 @@
     #bootstrap-overrides h2 {
         font-size: 1.5rem;
     }
+    #bootstrap-overrides h4 {
+        font-size: 1rem;
+    }
 }
 @media (max-width: 575.98px) {
     p {
@@ -30,6 +26,9 @@
     }
     #bootstrap-overrides h2 {
         font-size: 1.1rem;
+    }
+    #bootstrap-overrides h4 {
+        font-size: .8rem;
     }
     #link-box {
         margin-bottom: 8vh;
@@ -61,8 +60,8 @@ body {
 }
 #bootstrap-overrides .out .menu-btn {
     margin: 10% 0px;
-    height: calc(100vw / 10);
-    width: calc(100vw / 10);
+    height: calc(100vmin / 7);
+    width: calc(100vmin / 7);
     padding: 20%;
     background-color: #4255ff;
     border-radius: 50%;
@@ -146,8 +145,8 @@ hr {
 .edu-banner-lower {
     max-width: 53vw;
 }
-.edu-banner-lower p {
-    margin-bottom: 0px;
+p {
+    margin-bottom: 2px;
 }
 .rotate-left {
     position: relative;
@@ -160,4 +159,9 @@ hr {
 }
 #head-logo {
     height: 6vh;
+}
+.card {
+
+    margin: 30px 2vw;
+    padding: 10px;
 }
