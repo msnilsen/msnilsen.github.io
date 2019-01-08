@@ -1,6 +1,37 @@
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .edu-banner-lower {
         max-width: 53vw;
+    }
+    #skills p {
+        margin: 0px;
+        font-size: .85rem;
+    }
+    li {
+        font-size: .85rem;
+    }
+}
+@media (max-width: 1199.98px) {
+    p {
+        font-size: .85rem;
+    }
+    #bootstrap-overrides h1 {
+        font-size: 2.2rem;
+    }
+    #bootstrap-overrides h2 {
+        font-size: 1.7rem;
+    }
+    #bootstrap-overrides h3 {
+        font-size: 1.5rem;
+    }
+    #bootstrap-overrides h4 {
+        font-size: 1.2rem;
+    }
+    #skills p {
+        margin: 0px;
+        font-size: .7rem;
+    }
+    li {
+        font-size: .8rem;
     }
 }
 @media (max-width: 991.98px){
@@ -57,16 +88,13 @@
         margin: 0px;
         font-size: .5rem;
     }
-    #skills .col {
-        padding: 1vmin;
-    }
     li {
         font-size: .5rem;
     }
 }
 ul {
-    padding-left: 3vw;
     margin-bottom: 0px;
+    padding-left: 4vmin;
 }
 #title h1 {
      font-size: 4vmax;
@@ -170,6 +198,7 @@ hr {
     padding-left: 25%;
  }
 .edu-banner-lower {
+    max-width: 60vw;
     padding: 1vmax;
 }
 .blue-vector {
@@ -192,5 +221,8 @@ hr {
 }
 .card {
     margin: 4vmin 2vmin;
-    padding: 20px;
+    overflow: hidden;
+}
+.pt {
+    padding-top: 3vmax;
 }
