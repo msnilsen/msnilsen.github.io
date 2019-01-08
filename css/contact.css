@@ -56,16 +56,17 @@ p {
     margin-bottom: 0px;
 }
 .portrait-main {
-    height: 40vmin;
-    border: 3px solid white;
+    width: 100%;
+    max-width: 40vmin;
+    border: 3px solid;
     border-radius: 50%;
 }
 hr {
     border: none;
     height: 2px;
     /* Set the hr color */
-    color: #FFF; /* old IE */
-    background-color: #FFF; /* Modern Browsers */
+    color: #000000; /* old IE */
+    background-color: #000000; /* Modern Browsers */
 }
 #head-logo {
     height: 6vh;
@@ -95,4 +96,18 @@ hr {
     width: 30px;
     height: 30px;
     padding: 5px;
+}
+.btn {
+    margin: 10px;
+}
+.out {
+    /*background-color: #808080;*/
+    padding: 6vmin;
+    -webkit-box-shadow: 0px 0px 39px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 39px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 39px 4px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+.container > div {
+    margin-top: 5vh;
 }
