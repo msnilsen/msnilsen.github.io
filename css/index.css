@@ -2,10 +2,6 @@
     .edu-banner-lower {
         max-width: 53vw;
     }
-    #skills p {
-        margin: 0px;
-        font-size: .85rem;
-    }
     li {
         font-size: .85rem;
     }
@@ -25,10 +21,6 @@
     }
     #bootstrap-overrides h4 {
         font-size: 1.2rem;
-    }
-    #skills p {
-        margin: 0px;
-        font-size: .7rem;
     }
     li {
         font-size: .8rem;
@@ -84,13 +76,13 @@
         margin-top: 1vh;
         margin-bottom: 1vh;
     }
-    #skills p {
-        margin: 0px;
-        font-size: .5rem;
-    }
     li {
         font-size: .5rem;
     }
+}
+#head-logo:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
 }
 ul {
     margin-bottom: 0px;
