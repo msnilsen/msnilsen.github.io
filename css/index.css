@@ -81,9 +81,9 @@
     #bootstrap-overrides h6 {
         font-size: .65em;
     }
-    #link-box {
-        margin-bottom: 8vh;
-    }
+    /*#link-box {*/
+        /*margin-bottom: 8vh;*/
+    /*}*/
     hr {
         margin-top: 1vh;
         margin-bottom: 1vh;
