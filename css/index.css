@@ -8,6 +8,10 @@
     .edu-banner-lower {
         max-width: 60vw;
     }
+    .edu-banner-lower p {
+        font-size: .85em;
+        line-height: .95em;
+    }
 }
 @media (max-width: 1199.98px) {
     p {
@@ -30,6 +34,9 @@
     }
     .edu-banner-lower {
         max-width: 60vw;
+    }
+    #bootstrap-overrides .edu-banner {
+        font-size: 1.3em;
     }
 }
 @media (max-width: 991.98px){
@@ -188,7 +195,7 @@ hr {
 }
 .edu-banner {
     background-size: cover;
-    min-width: 70vw;
+    min-width: 75vw;
     padding: 10px;
     /*opacity: 0.5;*/
     /*filter: alpha(opacity=50);*/
@@ -224,7 +231,7 @@ hr {
     padding-top: 3vmax;
 }
 .skill-card-holder > a {
-    padding: 7vmin;
+    padding: 5vmin;
     margin: 1vmax;
     background-color: #f8f9fa;
     -webkit-box-shadow: 0px 0px 39px 4px rgba(0,0,0,0.75);
