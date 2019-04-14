@@ -57,6 +57,10 @@
                                         <label for="animalNumber">Animals</label>
                                         <input name="animalNumber" type="number" class="form-control" id="animalNumber" value="1" onchange="updateEstimate()" required>
                                     </div>
+                                    <div class="form-group">
+                                        <label for="specialRequests">Special Requests</label>
+                                        <textarea name="specialRequests" class="form-control" id="specialRequests" rows="5"></textarea>
+                                    </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
@@ -68,20 +72,21 @@
                                         <input name="email" type="email" class="form-control" id="emai1" aria-describedby="emailHelp" placeholder="Enter email" required>
                                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                                     </div>
+                                    <div class="form-group">
+                                        <label for="startDay">Start Day</label>
+                                        <input name="startDay" type="date" class="form-control" id="startDay" required>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label for="specialRequests">Special Requests</label>
-                                        <textarea name="specialRequests" class="form-control" id="specialRequests" rows="5"></textarea>
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="row pt-3">
                                 <div class="col-sm-12">
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div style="line-height: .4em">
+                                        <div style="line-height: .5em">
                                             <h3 id="estimate">Error calculating price estimate</h3>
                                             <small>*This is just a rough estimate</small>
                                         </div>
