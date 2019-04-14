@@ -109,11 +109,10 @@
     document.getElementById('phone').innerHTML = 'Phone: ' + '706' + '-' + '362' + '-' + '7112';
     document.onload = updateEstimate();
      function updateEstimate() {
-         var visits = document.getElementById('visitsPerDay').value;
-         var days = document.getElementById('days').value;
+         var visits = document.getElementById('visitsPerDay').value * document.getElementById('days').value;;
          var animals = document.getElementById('animalNumber').value;
          var PPV = 10;
-         var estimate = (visits * days * PPV) + (animals * 3);
+         var estimate = (visits * PPV) + (visits * animals * 3);
          document.getElementById('estimate').innerText = "Price Estimate: $" + estimate;
     }
 </script>
