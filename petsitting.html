@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/matthewNilsenLogo.png">
+    <title>Matthew Nilsen Petsitting</title>
+
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/petsitting.css" type="text/css" rel="stylesheet">
+</head>
+<body id="bs-overrides-petsitting">
+    <div class="container-fluid vh-100">
+        <div class="row">
+            <div class="col-sm-3 ownerSection right-shadow" id="title">
+                <div class="d-flex flex-row justify-content-center h-100">
+                    <div class="d-flex flex-column justify-content-center">
+                        <div class="p-3">
+                            <img class="portrait-main" src="img/matthewNilsenPortrait.jpg" alt="Portrait of Matthew Nilsen">
+                            <hr>
+                            <h2>Questions or Concerns?</h2>
+                            <p id="email">Please enable JavaScript</p>
+                            <p id="phone">Please enable JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9" id="body">
+                <div class="row pt-3">
+                    <div class="col-sm-12">
+                        <h1 class="text-center">It's Cheap, Safe, and Easy!</h1>
+                        <div class="d-flex flex-column justify-content-around num-col">
+                            <div class="d-flex flex-row align-items-center">
+                                <img class="number" src="img/1.svg" alt="1">
+                                <h2>Fill out the form below to contact me and receive a price estimate</h2>
+                            </div>
+                            <div class="d-flex flex-row align-items-center">
+                                <img class="number" src="img/2.svg" alt="2">
+                                <h2>Wait 1 - 2 business days to arrange a face-to-face meeting</h2>
+                            </div>
+                            <div class="d-flex flex-row align-items-center">
+                                <img class="number" src="img/3.svg" alt="3">
+                                <h2>Leave your home without having to worry about your pets!</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 form">
+                        <form action="https://formspree.io/mnilsen50@gmail.com" method="POST">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="visitsPerDay">Visits Per Day</label>
+                                        <input name="visitsPerDay" type="number" class="form-control" id="visitsPerDay" value="0" onchange="updateEstimate()" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="animalNumber">Animals</label>
+                                        <input name="animalNumber" type="number" class="form-control" id="animalNumber" value="1" onchange="updateEstimate()" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="days">Days Gone</label>
+                                        <input name="days" type="number" class="form-control" id="days" value="0" onchange="updateEstimate()" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input name="email" type="email" class="form-control" id="emai1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="specialRequests">Special Requests</label>
+                                        <textarea name="specialRequests" class="form-control" id="specialRequests" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pt-3">
+                                <div class="col-sm-12">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div style="line-height: .4em">
+                                            <h3 id="estimate">Error calculating price estimate</h3>
+                                            <small>*This is just a rough estimate</small>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    document.getElementById('email').innerHTML = 'Email: ' + 'mnilsen50' + '@' + 'gmail.com';
+    document.getElementById('phone').innerHTML = 'Phone: ' + '706' + '-' + '362' + '-' + '7112';
+    document.onload = updateEstimate();
+     function updateEstimate() {
+         var visits = document.getElementById('visitsPerDay').value;
+         var days = document.getElementById('days').value;
+         var animals = document.getElementById('animalNumber').value;
+         var PPV = 10;
+         var estimate = (visits * days * PPV) + (animals * 3);
+         document.getElementById('estimate').innerText = "Price Estimate: $" + estimate;
+    }
+</script>
+</body>
+</html>
