@@ -76,3 +76,8 @@ form {
     overflow-y: scroll;
     height: 100vh;
 }
+
+.logo {
+    width: 100px;
+    margin-right: 2em;
+}
