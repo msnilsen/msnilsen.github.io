@@ -1,0 +1,28 @@
+.hero__content > h1 {
+    animation: typing 1s steps(25, end) forwards;
+}
+
+.hero__content > h2 {
+    animation: typing 1s steps(25, end) both;
+    animation-delay: 1s;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        opacity: 0;
+    }
+}
+
+.cursor {
+    animation: blink 1s infinite;
+}

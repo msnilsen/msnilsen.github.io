@@ -1,0 +1,88 @@
+$space: #2B2D42;
+$manatee: #8D99AE;
+$navbar-size: 70px;
+$inactive: rgb(189, 189, 189);
+
+body {
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+nav {
+    height: 100vh;
+    width: $navbar-size;
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    top: 0;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+nav > ul > li {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+nav a {
+    display: block;
+}
+
+.brand {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.links {
+    font-size: 1.5rem;
+    color: $inactive;
+}
+
+.links > li {
+    padding: 10px 0 10px 0;
+}
+
+.links a:hover {
+    color: white;
+}
+
+.active_link {
+    color: white;
+}
+
+.external > li {
+    padding: 5px 0 5px 0;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+.hero {
+    position: relative;
+    left: $navbar-size;
+    width: calc(100% - $navbar-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+

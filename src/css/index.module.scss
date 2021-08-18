@@ -1,0 +1,34 @@
+.input {
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    border: none;
+    caret-color: white;
+    min-width: 0;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.caret {
+    font-size: 24px;
+}
+
+.console_box {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.content {
+    position: relative;
+    width: 400px;
+}
+
+.content h1,
+.content h2 {
+    margin: inherit 0 inherit 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
