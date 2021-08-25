@@ -1,6 +1,7 @@
 $space: #2B2D42;
 $manatee: #8D99AE;
-$navbar-size: 70px;
+$navbar-size: 70;
+$navbar-padding: 10;
 $inactive: rgb(189, 189, 189);
 
 body {
@@ -8,20 +9,33 @@ body {
     font-family: 'Source Code Pro', monospace;
     margin: 0;
     background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
-nav {
+.navbar {
+    background-color: #404040;
+    padding: 0 #{$navbar-padding}px 0 #{$navbar-padding}px;
     height: 100vh;
-    width: $navbar-size;
-    position: absolute;
+    width: #{$navbar-size}px;
+    position: fixed;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    align-items: center;
     top: 0;
+}
+
+.links li a {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    line-height: 0;
+}
+
+.links li a:hover {
+    cursor: pointer;
 }
 
 nav > ul {
@@ -77,12 +91,7 @@ a {
 
 .hero {
     position: relative;
-    left: $navbar-size;
-    width: calc(100% - $navbar-size);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    left: calc(#{$navbar-size}px + calc(#{$navbar-padding}px * 2));
+    width: calc(100% - #{$navbar-size}px - calc(#{$navbar-padding}px * 2));
+    box-sizing: border-box;
 }
-
-

@@ -1,34 +1,65 @@
-.input {
-    background-color: transparent;
-    color: white;
-    font-size: 24px;
-    border: none;
-    caret-color: white;
-    min-width: 0;
+.aboutContent {
+    position: relative;
+    width: 600px;
+    left: 10%;
 }
 
-.input:focus {
-    outline: none;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
 
-.caret {
-    font-size: 24px;
+p {
+    margin-top: 0;
 }
 
-.console_box {
+.particles {
+  position: absolute;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 0 50px 0;
+}
+
+.homeSection {
+    position: relative;
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.content {
-    position: relative;
-    width: 400px;
+h1 {
+    font-size: 5rem;
 }
 
-.content h1,
-.content h2 {
-    margin: inherit 0 inherit 0;
-    white-space: nowrap;
-    overflow: hidden;
+hr {
+    border: 1px solid white;
+}
+
+.emailBox {
+    display: inline-block;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.iconContainer > svg {
+    margin: 0 10px 0 10px;
+    font-size: 30px;
 }

@@ -12,15 +12,19 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "untrack": "gatsby telemetry --disable"
   },
   "dependencies": {
     "gatsby": "^2.26.1",
     "gatsby-plugin-react-helmet": "^3.8.0",
     "gatsby-plugin-sass": "^3.0.0",
     "node-sass": "^5.0.0",
+    "particles.js": "^2.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-particles-js": "^3.5.3",
+    "smooth-scroll": "^16.1.3"
   }
 }
