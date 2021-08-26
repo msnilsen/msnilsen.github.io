@@ -1,10 +1,10 @@
 import React from 'react'
 
-import layoutStyles from '../css/layout.module.scss'
+import skilltagStyles from '../css/skilltag.module.scss'
 
 export default function Skilltag(props) {
     return (
-        <div>
+        <div className={skilltagStyles.skilltag}>
             <p>{props.text}</p>
         </div>
     )

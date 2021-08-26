@@ -9,6 +9,7 @@ import Skilltag from "../components/skilltag";
 import Skillbar from "../components/skillbar";
 import Experience from "../components/experience";
 import Particles from 'react-particles-js';
+import Progress from 'react-circle-progress-bar'
 
 export default function IndexPage() {
 
@@ -21,6 +22,7 @@ export default function IndexPage() {
         // });
     }); // <-- empty array means 'run once'
     const particleConfig = require("../config/particles.json")
+    const percentage = 66;
 
     return (
         <Layout>
@@ -45,21 +47,30 @@ export default function IndexPage() {
                     </div>
                 </div>
             </section>
-            <section id="skills">
-                <h2>My Skills</h2>
-                <p>I have a rich background in may web frameworks, software development, software architecture, scripting, and networking, I have picked up many skills along the way and strive to keep learn more.</p>
-                <hr></hr>
+            <section id="skills" className={indexStyles.skillsSection}>
                 <div>
-                    <Skilltag text={'Python'}></Skilltag>
-                    <Skilltag text={'Python'}></Skilltag>
-                    <Skilltag text={'Python'}></Skilltag>
-                    <Skilltag text={'Python'}></Skilltag>
+                    <h2>My Skills</h2>
+                    <div>
+                        <Skilltag text={'Python'}></Skilltag>
+                        <Skilltag text={'Python'}></Skilltag>
+                        <Skilltag text={'Python'}></Skilltag>
+                        <Skilltag text={'Python'}></Skilltag>
+                    </div>
+                    <hr></hr>
+                    <p>I have a rich background in may web frameworks, software development, software architecture, scripting, and networking, I have picked up many skills along the way and strive to keep learn more.</p>
                 </div>
-                <div id="skill_bars">
-                    <Skillbar title={'Software Architecture'} percentage={'60%'}></Skillbar>
-                    <Skillbar title={'Software Architecture'} percentage={'60%'}></Skillbar>
-                    <Skillbar title={'Software Architecture'} percentage={'60%'}></Skillbar>
-                    <Skillbar title={'Software Architecture'} percentage={'60%'}></Skillbar>
+                <div id="skill_bars" className={indexStyles.skillBars}>
+                    <div className={indexStyles.left}>
+                        <Progress progress={90} subtitle={"Front-end Dev"}/>
+                        <Progress progress={80} subtitle={"Back-end Dev"}/>
+                        <Progress progress={70} subtitle={"Networking"}/>
+                        <Progress progress={70} subtitle={"DevOps"}/>
+                    </div>
+                    <div className={indexStyles.right}>
+                        <Progress progress={75} subtitle={"Software Architecture"}/>
+                        <Progress progress={85} subtitle={"Cloud Services"}/>
+                        <Progress progress={90} subtitle={"Scripting"}/>
+                    </div>
                 </div>
             </section>
             <section id="experience">

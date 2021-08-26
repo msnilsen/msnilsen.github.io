@@ -22,6 +22,8 @@
     "node-sass": "^5.0.0",
     "particles.js": "^2.0.0",
     "react": "^16.13.1",
+    "react-circle-progress-bar": "^0.1.4",
+    "react-circular-progressbar": "^2.0.4",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-particles-js": "^3.5.3",

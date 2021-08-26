@@ -1,0 +1,15 @@
+.skilltag {
+    border: 1px solid black;
+    background-color: #6A6D7B;
+    border-radius: 500px;
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 6px 6px 0px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 6px 6px 0px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 6px 6px 0px -1px rgba(0,0,0,1);
+}
+
+.skilltag p {
+    margin: 0;
+    padding: 5px 10px;
+}

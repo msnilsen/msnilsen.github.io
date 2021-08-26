@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
 .aboutContent {
     position: relative;
     width: 600px;
@@ -6,6 +8,10 @@
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    font-family: Ubuntu, sans-serif;
+    font-size: 3rem;
 }
 
 p {
@@ -13,12 +19,13 @@ p {
 }
 
 .particles {
-  position: absolute;
+  position: fixed;
   height: 100%;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+//   z-index: -1000;
 }
 
 section {
@@ -62,4 +69,85 @@ hr {
 .iconContainer > svg {
     margin: 0 10px 0 10px;
     font-size: 30px;
+}
+
+.skillsSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsSection > div {
+    width: 50%;
+    max-width: 600px;
+}
+
+$skillBarHeight: 125;
+
+.skillBars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: calc(#{$skillBarHeight}px * 4);
+    margin: 0 2rem;
+}
+
+.skillBars text{
+    fill: white;
+}
+
+.skillBars .left {
+
+}
+
+.skillBars .right {
+    margin-top: calc(#{$skillBarHeight}px / 2)
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .skillBars svg{
+        height: #{$skillBarHeight}px;
+    }
+    .skillBars {
+        max-height: calc(#{$skillBarHeight}px * 4);
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .skillBars svg{
+        height: #{$skillBarHeight}px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .skillBars svg{
+        height: #{$skillBarHeight}px;
+    }
+    .skillBars {
+        max-height: calc(#{$skillBarHeight}px * 4);
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .skillBars svg{
+        height: #{$skillBarHeight}px;
+    }
+    .skillBars {
+        max-height: calc(#{$skillBarHeight}px * 4);
+    }
+}   
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .skillBars svg{
+        height: calc(#{$skillBarHeight}px * 1.5);
+    }
+    .skillBars {
+        max-height: calc(#{$skillBarHeight}px * 4 * 1.5);
+    }
 }
