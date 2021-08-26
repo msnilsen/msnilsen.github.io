@@ -4,8 +4,10 @@ import portrait from '../images/mn.jpg'
 import { Link } from "gatsby"
 
 import layoutStyles from '../css/layout.module.scss'
+import Scrollspy from 'react-scrollspy'
+import '../css/globalStyles.scss'
 
-require("smooth-scroll")('a[href*="#"]')
+// require("smooth-scroll")('a[href*="#"]')
 
 export default function Layout(props) {
     return (
@@ -21,26 +23,13 @@ export default function Layout(props) {
                     <img src={ portrait } className={ layoutStyles.brand } alt="MN" />
                 </Link>
 
-                <ul className={ layoutStyles.links }>
-                    <li>
-                        <a className={"navItem"}>About</a>
-                    </li>
-                    <li>
-                        <a className={"navItem"}>Skill</a>
-                    </li>
-                    <li>
-                        <a className={"navItem"}>Experience</a>
-                    </li>
-                </ul>
+                <Scrollspy className={layoutStyles.links} style={layoutStyles.scrollspy} items={ ['home', 'skills', 'experience'] } currentClassName={"active_link"}>
+                    <li><a className={layoutStyles.navItem} href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                </Scrollspy>
                 
-                <ul className={ layoutStyles.external }>
-                    <li>
-                        <a href=""><i className="fab fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i className="fab fa-github-square"></i></a>
-                    </li>
-                </ul>
+                <div></div>
             </nav>
 
             <div className={ layoutStyles.hero }>

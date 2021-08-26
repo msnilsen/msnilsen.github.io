@@ -2,7 +2,8 @@
 
 .aboutContent {
     position: relative;
-    width: 600px;
+    width: 40%;
+    max-width: 700px;
     left: 10%;
 }
 
@@ -14,33 +15,32 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3rem;
 }
 
-p {
-    margin-top: 0;
-}
-
 .particles {
   position: fixed;
-  height: 100%;
+  height: 100vh;
+  width: 100%;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-//   z-index: -1000;
+  z-index: -1000;
 }
 
+// section:first-child {
+// }
+
 section {
-    height: 100vh;
     padding: 20px;
+    min-height: 100vh;
     box-sizing: border-box;
-    margin: 0 0 50px 0;
+    position: relative;
 }
 
 .homeSection {
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -52,44 +52,64 @@ hr {
 }
 
 .emailBox {
+    position: fixed;
     display: inline-block;
-    margin-left: auto;
-    margin-bottom: 20px;
+    font-weight: bold;
+    right: 20px;
+    bottom: 20px;
 }
 
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .name {
     font-size: 2rem;
 }
 
-.iconContainer > svg {
+.iconContainer svg {
     margin: 0 10px 0 10px;
     font-size: 30px;
 }
 
 .skillsSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.experienceSection {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.skillsSection > div {
-    width: 50%;
-    max-width: 600px;
+.skillsSectionHeader {
+    padding-left: 5%;
 }
 
 $skillBarHeight: 125;
 
+.skillbarContainer {
+    margin: 0 2rem;
+}
+
 .skillBars {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    max-height: calc(#{$skillBarHeight}px * 4);
     margin: 0 2rem;
 }
 
@@ -97,12 +117,19 @@ $skillBarHeight: 125;
     fill: white;
 }
 
-.skillBars .left {
-
+.experienceContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    gap: 10px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
-.skillBars .right {
-    margin-top: calc(#{$skillBarHeight}px / 2)
+.experienceHeader {
+    width: 50%;
+    margin: 0 auto 75px auto;
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -110,8 +137,16 @@ $skillBarHeight: 125;
     .skillBars svg{
         height: #{$skillBarHeight}px;
     }
-    .skillBars {
-        max-height: calc(#{$skillBarHeight}px * 4);
+    .skillBars .right {
+        margin-top: calc(#{$skillBarHeight}px / 2)
+    }
+    .experienceContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .skillsSection {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
     }
 }
 
@@ -120,6 +155,17 @@ $skillBarHeight: 125;
     .skillBars svg{
         height: #{$skillBarHeight}px;
     }
+    .skillBars .right {
+        margin-top: calc(#{$skillBarHeight}px / 2)
+    }
+    .experienceContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .skillsSection {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
 }
 
 // Large devices (desktops, 992px and up)
@@ -127,8 +173,16 @@ $skillBarHeight: 125;
     .skillBars svg{
         height: #{$skillBarHeight}px;
     }
-    .skillBars {
-        max-height: calc(#{$skillBarHeight}px * 4);
+    .skillBars .right {
+        margin-top: calc(#{$skillBarHeight}px / 2)
+    }
+    .experienceContainer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .skillsSection {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
     }
 }
 
@@ -137,8 +191,16 @@ $skillBarHeight: 125;
     .skillBars svg{
         height: #{$skillBarHeight}px;
     }
-    .skillBars {
-        max-height: calc(#{$skillBarHeight}px * 4);
+    .skillBars .right {
+        margin-top: calc(#{$skillBarHeight}px / 2)
+    }
+    .experienceContainer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .skillsSection {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
 }   
 
@@ -147,7 +209,15 @@ $skillBarHeight: 125;
     .skillBars svg{
         height: calc(#{$skillBarHeight}px * 1.5);
     }
-    .skillBars {
-        max-height: calc(#{$skillBarHeight}px * 4 * 1.5);
+    .skillBars .right {
+        margin-top: calc(#{$skillBarHeight}px / 2)
+    }
+    .experienceContainer {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .skillsSection {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
 }

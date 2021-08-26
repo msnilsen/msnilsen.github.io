@@ -1,15 +1,19 @@
 import React from 'react'
 
-import layoutStyles from '../css/layout.module.scss'
+import experienceStyles from '../css/experience.module.scss'
 
 export default function Experience(props) {
+    const optionalContainerStyles={
+        width: props.width,
+        height: props.height
+    }
+
+    const imgWidth = props.imgWidth ? props.imgWidth : '100%'
     return (
-        <div style={{border: '1px solid black'}}>
-            <div>
-                <p>{props.title}</p>
-                <p>{props.date}</p>
-            </div>
+        <div className={experienceStyles.experienceContainer} style={optionalContainerStyles}>
+            <h6>{props.title}</h6>
             <p>{props.content}</p>
+            <img src={props.img} width={imgWidth}></img>
         </div>
     )
 }

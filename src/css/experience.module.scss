@@ -1,0 +1,27 @@
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.experienceContainer:hover {
+    background-color:rgba(0, 0, 0, 0.1)
+}
+
+.experienceContainer > * {
+    margin: 10px 0;
+}
+
+.experienceContainer > img {
+    width: 90%;
+    margin: auto;
+}
+
+.experienceContainer h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+}

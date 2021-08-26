@@ -16,7 +16,6 @@ body {
 }
 
 .navbar {
-    background-color: #404040;
     padding: 0 #{$navbar-padding}px 0 #{$navbar-padding}px;
     height: 100vh;
     width: #{$navbar-size}px;
@@ -76,10 +75,6 @@ nav a {
     color: white;
 }
 
-.active_link {
-    color: white;
-}
-
 .external > li {
     padding: 5px 0 5px 0;
 }
@@ -94,4 +89,5 @@ a {
     left: calc(#{$navbar-size}px + calc(#{$navbar-padding}px * 2));
     width: calc(100% - #{$navbar-size}px - calc(#{$navbar-padding}px * 2));
     box-sizing: border-box;
+    overflow: hidden;
 }
