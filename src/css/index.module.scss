@@ -2,7 +2,7 @@
 
 .aboutContent {
     position: relative;
-    width: 40%;
+    width: 90%;
     max-width: 700px;
     left: 10%;
 }
@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5rem;
     font-weight: 700;
     font-family: Ubuntu, sans-serif;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .particles {
@@ -23,11 +23,8 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  z-index: -1000;
+//   z-index: -1000;
 }
-
-// section:first-child {
-// }
 
 section {
     padding: 20px;
@@ -100,9 +97,6 @@ hr {
 
 $skillBarHeight: 125;
 
-.skillbarContainer {
-    margin: 0 2rem;
-}
 
 .skillBars {
     display: flex;
@@ -110,7 +104,10 @@ $skillBarHeight: 125;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 2rem;
+}
+
+.skillBars svg {
+    height: #{$skillBarHeight}px;
 }
 
 .skillBars text{
@@ -128,12 +125,17 @@ $skillBarHeight: 125;
 }
 
 .experienceHeader {
-    width: 50%;
     margin: 0 auto 75px auto;
+	word-wrap: anywhere;
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+    .skillBars {
+    }
+    .skillbarContainer {
+        margin: 0 2rem;
+    }
     .skillBars svg{
         height: #{$skillBarHeight}px;
     }
@@ -147,56 +149,38 @@ $skillBarHeight: 125;
     .skillsSection {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 3rem;
+    }
+    .experienceHeader {
+        width: 50%;
+        word-wrap: initial;
+    }
+    .aboutContent {
+        width: 40%;
     }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    .skillBars svg{
-        height: #{$skillBarHeight}px;
-    }
-    .skillBars .right {
-        margin-top: calc(#{$skillBarHeight}px / 2)
-    }
-    .experienceContainer {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .skillsSection {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
+    .skillBars {
+        margin: 0 2rem;
     }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    .skillBars svg{
-        height: #{$skillBarHeight}px;
-    }
-    .skillBars .right {
-        margin-top: calc(#{$skillBarHeight}px / 2)
-    }
     .experienceContainer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-    }
-    .skillsSection {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
     }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    .skillBars svg{
-        height: #{$skillBarHeight}px;
-    }
-    .skillBars .right {
-        margin-top: calc(#{$skillBarHeight}px / 2)
-    }
-    .experienceContainer {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+    .skillBars {
+        margin: 0 2rem;
     }
     .skillsSection {
         grid-template-columns: repeat(2, 1fr);
@@ -206,18 +190,17 @@ $skillBarHeight: 125;
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
+    .skillBars {
+        margin: 0 2rem;
+    }
+    .skillbarContainer {
+        margin: 0 2rem;
+    }
     .skillBars svg{
         height: calc(#{$skillBarHeight}px * 1.5);
-    }
-    .skillBars .right {
-        margin-top: calc(#{$skillBarHeight}px / 2)
     }
     .experienceContainer {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-    }
-    .skillsSection {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
     }
 }

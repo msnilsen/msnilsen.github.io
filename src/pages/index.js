@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import Helmet from "react-helmet"
 import Layout from '../components/layout'
 import { navigate } from '@reach/router';
@@ -9,6 +9,8 @@ import Skilltag from "../components/skilltag";
 import Experience from "../components/experience";
 import Particles from 'react-particles-js';
 import Progress from 'react-circle-progress-bar'
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 import armyLogo from '../images/army.svg'
 import sameTunesLogo from '../images/sametunes.png'
@@ -18,17 +20,60 @@ import hackGTLogo from '../images/hackGT.png'
 import omnimetrixLogo from '../images/omnimetrix.png'
 
 export default function IndexPage() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const noPercentages = [0, 0, 0, 0, 0, 0, 0]
+    const maxPercentages = [90, 80, 70, 70, 75, 85, 95]
+    const [percentages, setPercentages] = useState(noPercentages);
+
+    const useWindowWidth = () => {
+        const isBrowser = typeof window !== 'undefined'
+        const [width, setWidth] = useState(isBrowser ? window.innerWidth : 0)
+
+        useEffect(() => {
+            if (!isBrowser) return false
+
+            const handleResize = () => setWidth(window.innerWidth)
+            window.addEventListener('resize', handleResize)
+
+            return () => {
+            window.removeEventListener('resize', handleResize)
+            }
+        })
+
+        return width
+    }
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    const particleConfig = useWindowWidth() > 600 ? require("../config/particles.json") : require("../config/particles-mobile.json")
+
+    function updatePercentages(x) {
+        // x = 0 to 1
+        let tmp = percentages
+        for (let i = 0; i < tmp.length; i++) {
+            tmp[i] = x * maxPercentages[i]
+
+        }
+        setPercentages(tmp)
+        console.log("Set arr to " + tmp);
+    }
 
     useEffect(() => {
-        // require("../../node_modules/particles.js/particles.js")
-        // const particlesJS = window.particlesJS
-        // console.log(window)
-        // window.particlesJS.load('particles-js', '../config/particles.json', function () {
-        //     console.log('loaded particles.js');
-        // });
-    }); // <-- empty array means 'run once'
-    const particleConfig = require("../config/particles.json")
-    const percentage = 66;
+        ScrollTrigger.create({
+            trigger: '#skill_bars',
+            start: 'top center',
+            end: 'bottom center',
+            onEnter: () => setPercentages(maxPercentages),
+            onLeaveBack: () => setPercentages(noPercentages),
+            // onUpdate: self => {
+            //     console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
+            //     // updatePercentages(self.progress.toFixed(3))
+            // }
+        })
+    }, [])
 
     return (
         <Layout>
@@ -69,15 +114,15 @@ export default function IndexPage() {
                 <div className={indexStyles.skillbarContainer}>
                     <div id="skill_bars" className={indexStyles.skillBars}>
                         <div className={indexStyles.left}>
-                            <Progress progress={90} subtitle={"Front-end Dev"}/>
-                            <Progress progress={80} subtitle={"Back-end Dev"}/>
-                            <Progress progress={70} subtitle={"Networking"}/>
-                            <Progress progress={70} subtitle={"DevOps"}/>
+                            <Progress animationDelay={0} transitionDuration={.5} transitionTimingFunction={"ease-in-out"} progress={percentages[0]} subtitle={"Front-end Dev"}/>
+                            <Progress animationDelay={.25} transitionDuration={.5} transitionTimingFunction={"ease-in-out"} progress={percentages[1]} subtitle={"Back-end Dev"}/>
+                            <Progress animationDelay={.5} transitionDuration={.5} transitionTimingFunction={"ease-in-out"} progress={percentages[2]} subtitle={"Networking"}/>
+                            <Progress animationDelay={.75} transitionDuration={.5} transitionTimingFunction={"ease-in-out"} progress={percentages[3]} subtitle={"DevOps"}/>
                         </div>
                         <div className={indexStyles.right}>
-                            <Progress progress={75} subtitle={"Software Architecture"}/>
-                            <Progress progress={85} subtitle={"Cloud Services"}/>
-                            <Progress progress={90} subtitle={"Scripting"}/>
+                            <Progress animationDelay={1} transitionDuration={.5} transitionTimingFunction={"ease-in-out"} progress={percentages[4]} subtitle={"Software Architecture"}/>
+                            <Progress animationDelay={1.25} transitionDuration={.5} transitionTimingFunction={"ease-in-out"} progress={percentages[5]} subtitle={"Cloud Services"}/>
+                            <Progress animationDelay={1.5} transitionDuration={.5} transitionTimingFunction={"ease-in-out"} progress={percentages[6]} subtitle={"Scripting"}/>
                         </div>
                     </div>
                 </div>

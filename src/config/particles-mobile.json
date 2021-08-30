@@ -1,0 +1,29 @@
+{
+    "__help": [
+        "https://particles.js.org/",
+        "https://codepen.io/matteobruni/pen/ZEeqGOq"
+    ],
+    "particles": {
+        "number": {
+            "value": 100
+        },
+        "color": {
+            "value": "#b0b0b0"
+        },
+        "links": {
+            "color": "#b0b0b0"
+        },
+        "size": {
+            "value": 3
+        },
+        "move": {
+            "speed": 1
+        },
+        "links": {
+            "distance": 60
+        },
+        "size": {
+            "value": 2
+        }
+    }
+}
