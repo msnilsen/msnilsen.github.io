@@ -33,15 +33,15 @@ section {
     position: relative;
 }
 
+section:last-child {
+    margin-bottom: 40px;
+}
+
 .homeSection {
     position: relative;
     width: 100%;
     display: flex;
     align-items: center;
-}
-
-h1 {
-    font-size: 5rem;
 }
 
 hr {
@@ -150,9 +150,6 @@ $skillBarHeight: 125;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr;
     }
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 3rem;
-    }
     .experienceHeader {
         width: 50%;
         word-wrap: initial;
@@ -164,6 +161,9 @@ $skillBarHeight: 125;
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 3rem;
+    }
     .skillBars {
         margin: 0 2rem;
     }
