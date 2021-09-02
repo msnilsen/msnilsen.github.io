@@ -16,6 +16,7 @@ export default function Layout(props) {
                 <title>MN</title>
                 <script src="https://kit.fontawesome.com/f91509e865.js" crossorigin="anonymous"></script>
                 <script src="../../node_amodules/particles.js/particles.js"  type="text/javascript"></script>
+                <link rel="icon" href="static/mn.png"/>
             </Helmet>
 
             <nav className={layoutStyles.navbar}>
